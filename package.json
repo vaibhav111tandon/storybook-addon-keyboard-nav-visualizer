@@ -1,0 +1,59 @@
+{
+  "name": "storybook-addon-keyboard-nav-visualizer",
+  "version": "1.0.0",
+  "description": "Visualize keyboard navigation, tab order, and focus management in Storybook",
+  "main": "dist/preset.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "mkdir -p dist && cp preset.js register.js preview.js dist/"
+  },
+  "keywords": [
+    "storybook",
+    "addon",
+    "a11y",
+    "accessibility",
+    "keyboard-navigation",
+    "tab-order",
+    "focus",
+    "wcag"
+  ],
+  "author": "Vaibhav Tandon <vaibhav.tandongcet@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaibhav111tandon/storybook-addon-keyboard-nav-visualizer"
+  },
+  "bugs": {
+    "url": "https://github.com/vaibhav111tandon/storybook-addon-keyboard-nav-visualizer/issues"
+  },
+  "homepage": "https://github.com/vaibhav111tandon/storybook-addon-keyboard-nav-visualizer#readme",
+  "peerDependencies": {
+    "@storybook/core": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "@storybook/manager-api": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "@storybook/preview-api": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
+  },
+  "storybook": {
+    "displayName": "Keyboard Navigation Visualizer",
+    "icon": "https://raw.githubusercontent.com/storybookjs/storybook/main/code/addons/a11y/icon.svg",
+    "supportedFrameworks": [
+      "react",
+      "vue",
+      "angular",
+      "svelte",
+      "web-components"
+    ],
+    "categories": [
+      "a11y",
+      "test"
+    ]
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
