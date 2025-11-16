@@ -13,6 +13,7 @@
     "build": "mkdir -p dist && cp preset.js register.js preview.js dist/"
   },
   "keywords": [
+    "storybook-addon",
     "storybook",
     "addon",
     "a11y",
