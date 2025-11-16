@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-keyboard-nav-visualizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Visualize keyboard navigation, tab order, and focus management in Storybook",
   "main": "dist/preset.js",
   "files": [
